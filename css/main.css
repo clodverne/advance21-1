@@ -1,0 +1,211 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  text-align: center;
+  z-index: 1;
+}
+
+header .top {
+  height: 9rem;
+}
+
+header .top ul {
+  margin: 0;
+  padding: 0;
+}
+
+header .top ul li {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: rgba(45,57,76,.839);
+  text-transform: uppercase;
+}
+
+header .bottom-row,
+header .main-row,
+header .top {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+header .main-row {
+  background: url("../img/fon.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header .main-row .main-form {
+  padding-left: 9rem;
+  text-align: left;
+}
+
+header .main-row .main-form h1 {
+  font-size: 5.2rem;
+  font-family: "Ubuntu";
+  color: #f7f6f2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+header .main-row .main-form h2 {
+  font-size: 2.4rem;
+  font-family: "Ubuntu";
+  color: #fff;
+  font-style: italic;
+  text-align: left;
+}
+
+header .main-row .main-form h3,
+header .main-row .main-form span {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: #f7f7f7;
+  display: inline-block;
+}
+
+header .main-row .main-form h3 {
+  margin-top: 4rem;
+}
+
+header .main-row .main-form span {
+  text-align: center;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: 2rem;
+  width: 5rem;
+  line-height: 2rem;
+  background-color: #ffce54;
+}
+
+header .main-row .main-form form {
+  margin-top: 2rem;
+}
+
+header .main-row .main-form form input {
+  width: 42rem;
+  height: 6rem;
+  border: 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding-left: 4rem;
+  outline: 0;
+}
+
+header .main-row .main-form form button {
+  margin-left: 3rem;
+  height: 6rem;
+  width: 11rem;
+  border: 0;
+  outline: 0;
+  background-color: #77c344;
+  font-size: 1.8rem;
+  font-family: "Ubuntu";
+  color: #fff;
+}
+
+header .main-row .main-form form button:active {
+  outline: 0;
+}
+
+header .main-row .main-img {
+  padding-top: 6rem;
+}
+
+header .main-row .main-img img {
+  width: 80%;
+}
+
+header .bottom-row {
+  text-align: center;
+  height: 16rem;
+}
+
+header .bottom-row img {
+  margin-right: 10rem;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: #bbb;
+}
+
+::-moz-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: #bbb;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: #bbb;
+}
+
+:-moz-placeholder {
+  font-size: 1.6rem;
+  font-family: "Ubuntu";
+  color: #bbb;
+}
