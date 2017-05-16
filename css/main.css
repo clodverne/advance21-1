@@ -58,6 +58,7 @@ html {
 header {
   text-align: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 header .top {
